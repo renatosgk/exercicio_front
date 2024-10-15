@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>CHECKPOINT02</h1>
+    </header>
+    <section>
+        <h2>Formulário de Cadastro</h2>
+    </section>
+    <form>
+        <fieldset>
+            <legend>Identificação</legend>
+            <label>Nome Completo:</label>
+            <input type="text" name="Nome" id="nome" placeholder="digite seu nome" required>
+            <br>
+            <label>RG:</label>
+            <input type="number" name="RG" id="RG" placeholder="digite seu RG" required>
+            <label>CPF:</label>
+            <input type="number" name="CPF" id="CPF" placeholder="digite seu CPF" required>
+            <br>
+            <label>Data de Nascimento:</label>
+            <input type="date" name="data" id="data" required>
+            <form>
+                <label>sexo</label>
+                <br>
+                <label>Masculino</label>
+                <input type="radio" value="Masculino">
+                <label>Feminino</label>
+                <input type="radio" value="Feminino">
+                <label>Outros</label>
+                <input type="radio" value="Outros">
+            </form>
+
+            <br>
+            <label>Senha:</label>
+            <input type="password" name="Senha" id="Senha" placeholder="digite sua senha" method="post" required>
+            <labe>Confirme sua Senha:</labe>
+            <input type="password" name="Senha01" id="Senha01" placeholder="Confirme sua senha" method="post" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label>Rua:</label>
+            <input type="text" name="Rua" id="Rua" placeholder="digite seu endereço">
+            <label>Numero:</label>
+            <input type="number" name="Numero" id="Numero" placeholder="digite o número da sua casa">
+            <label>Complemento:</label>
+            <input type="text" name="Complemento" id="Complemento" placeholder="casa,bairro,apartamento">
+            <br>
+            <label>Bairro:</label>
+            <input type="text" name="Bairro" id="Bairro" placeholder="digite seu bairro">
+            <label>Cidade:</label>
+            <input type="text" name="Cidade" id="Cidade" placeholder="digite sua cidade">
+            <label>Estado:</label>
+            <select name="Estado" id="Estado">
+                <option value="São Paulo">SP</option>
+                <option value="Rio de Jnaeiro">RJ</option>
+                <option value="Paraná">PR</option>
+                <option value="Acre">AC</option>
+                <option value="Ceará">CE</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Diversos</legend>
+            <h4>Areá de Interesse</h4>
+            <form>
+                <label>Tecnologia</label>
+                <input type="checkbox" name="Tecnologia" id="Tecnologia" value="Tecnologia">
+                <label>Esporte</label>
+                <input type="checkbox" name="Esporte" id="Esporte" value="Esporte">
+                <label>Outros</label>
+                <input type="checkbox" name="Outros" id="Outros" value="Outros">
+            </form>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Cor de Preferência</legend>
+            <input type="button" name="button" id="button">
+        </fieldset>
+    </form>
+    <button onclick="alert">CANCELAR</button>
+    <button onclick="alert">ENVIAR</button>
+
+
+</body>
+<footer>
+    <p>Fabio </p>
+    <p>Gabriel</p>
+    <p>Renato Kenji Sugaki RM-559810</p>
+</footer>
+
+</html>
